@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// var cors = require('cors')
+
+// app.use(cors()) // Use this after the variable declaration
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -15,3 +19,6 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
