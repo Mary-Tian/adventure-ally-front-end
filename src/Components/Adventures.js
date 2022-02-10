@@ -14,9 +14,9 @@ const Adventures = (props) => {
         {/* <h1>Adventure List</h1> */}
         <h2>{ props.name }</h2>
         <ul>
-          <img src={ props.image_url } width="100" height="200" />
-          <li>Price: { props.price }</li>
-          <li>Rating: { props.rating }</li>
+          <img src={ props.image_url } width="150" height="175" />
+          <li>How much is it? { props.price }</li>
+          <li>How amazing is it? { props.rating }</li>
         </ul>
       </section>
     );
