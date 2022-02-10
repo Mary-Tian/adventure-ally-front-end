@@ -1,4 +1,6 @@
 import React from 'react';
+import './FavoriteAdventures.css';
+import LikesButton from './LikesButton';
 
 const FavoriteAdventures = () => {
     return ( <div>
@@ -7,6 +9,7 @@ const FavoriteAdventures = () => {
             <li>Adventure 1</li>
             <li>Adventure 2</li>
             <li>Adventure 3</li>
+            <li>{ LikesButton }</li>
       </ul>
 
     </div> );

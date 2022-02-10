@@ -5,6 +5,7 @@ import React, {useEffect} from 'react';
 import FavoriteAdventures from './Components/FavoriteAdventures';
 import AdventuresList from './Components/AdventuresList';
 import Adventures from './Components/Adventures';
+import LikesButton from './Components/LikesButton';
 
 function App() {
   const name = "Capstone";
@@ -12,6 +13,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Adventure Ally</h1>
+      </header>
+      <main>
         <AdventuresList/>
         {/* <AdventuresList title="another-adventure"/> */}
         {/* <AdventuresList title="second-adventure"/> */}
@@ -29,9 +32,8 @@ function App() {
         >
           Learn React
         </a> */}
-      </header>
-      <main>
         <FavoriteAdventures />
+        <LikesButton />
       </main>
     </div>
   );

@@ -28,7 +28,7 @@ const AdventuresList = (props) => {
             // });
         adventureComponent = response.data.businesses.map(apiResponse => {
             return (
-                <Adventures name={apiResponse.name} image_url={apiResponse.image_url} price={apiResponse.price} rating={apiResponse.rating}></Adventures>
+                <Adventures key={apiResponse.name} name={apiResponse.name} image_url={apiResponse.image_url} price={apiResponse.price} rating={apiResponse.rating}></Adventures>
             );
         });
       })
@@ -67,7 +67,7 @@ const AdventuresList = (props) => {
     //         <li><Student name={student.nameData} email={student.emailData}></Student></li>
     //     )
     getAdventures();
-    
+
     return (
         <section>
         <h1>Adventure List</h1>
