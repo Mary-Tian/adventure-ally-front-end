@@ -37,6 +37,11 @@
   }
 }
 
+.top-container {
+  display: flex;
+  width: 1330px;
+  min-height: 350px;
+}
 /* body {
   background-image: url("https://images.unsplash.com/photo-1643712662909-29fe8f02b613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"); /* for the url you can use the http or file path */
   /* background-size: cover;  */
