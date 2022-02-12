@@ -1,0 +1,16 @@
+.favorite-adventures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ce8888;
+    flex-basis: 100px;
+    height: 500px;
+    margin: 5px;
+  }
+  
+  /* .item {
+    background: #ce8888;
+    flex-basis: 100px;
+    height: 100px;
+    margin: 5px;
+  } */

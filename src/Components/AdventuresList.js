@@ -93,7 +93,7 @@ const AdventuresList = (props) => {
 
 
     return (
-        <section className="AdventuresList">
+        <section className="adventures-list">
         <h1>Adventure List</h1>
         <h2>{props.title}</h2>
         <ul>

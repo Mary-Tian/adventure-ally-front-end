@@ -25,11 +25,11 @@ function App() {
       <header className="App-header">
         <h1>Adventure Ally</h1>
       </header>
-      <main>
+      <main className="container">
         <AdventuresList updateFunction={setLikedAdventures} likedAdventures={likedAdventures}/>
         {/* <AdventuresList title="another-adventure"/> */}
         {/* <AdventuresList title="second-adventure"/> */}
-        {/* <Adventures/> */}
+        {/* <Adventures likedAdventures={likedAdventures}/> */}
         {/* <Adventures name="Denver Biscuit" image_url="https://s3-media1.fl.yelpcdn.com/bphoto/bxPN9shgJEtwvT3Hrf_pCg/o.jpg" price="$$" rating="5 stars"/> */}
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>

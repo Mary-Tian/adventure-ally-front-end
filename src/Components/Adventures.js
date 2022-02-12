@@ -4,7 +4,7 @@ import './Adventures.css';
 const Adventures = (props) => {
 
   const addAdventureButton = () => {
-    console.log("Button works");
+    console.log(props.likedAdventures);
     props.updateFunction([...props.likedAdventures, props.name]);
   };
 
