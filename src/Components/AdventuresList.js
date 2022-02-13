@@ -13,7 +13,7 @@ const AdventuresList = (props) => {
     });
     const getAdventures = () => {
         axios
-        .get(`${'https://corsanywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search?location=Denver`, {
+        .get(`${'https://corsanywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search?location=Maui`, {
             headers: {
              Authorization: `Bearer ZcVl3Ogf5E_Otv6gEjo3_CoO5Hy0E-XHpkYivTB5RrM--Xjc5kAcIteuruKcOjf_RCoxehr_mgE4Sqx0fOA6-4lBONRDlFHy8UBjjzD-lHW6kITazl7LO2HdSLn5YXYx`  // discussed below
              

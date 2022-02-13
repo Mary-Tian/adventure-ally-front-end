@@ -2,10 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #ce8888;
-    flex-basis: 100px;
-    height: 500px;
+    background: #ffffff45;
+    opacity: 0.20;
+    width: 50%;
+    height: 750px;
     margin: 5px;
+    border: solid 20px red;
+  }
+
+  .favorite-adventures:hover {
+    opacity: 1.0;
   }
   
   /* .item {

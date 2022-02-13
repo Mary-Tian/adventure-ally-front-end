@@ -1,6 +1,6 @@
-* {
+/* * {
     border: solid 2px red;
-}
+} */
 
 .AdventuresList {
     margin-left: 40px;
@@ -12,8 +12,9 @@
     flex-direction: column;
     background: #ce8888;
     align-items: center;
-    flex-basis: 100px;
-    height: 500px;
+    /* flex-basis: 100px; */
+    height: 750px;
+    width: 50%;
     margin: 5px;
     overflow-y: scroll;
   }

@@ -23,13 +23,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Adventure Ally</h1>
+        <h1>Adventure​🌏​🗺​⛰​Ally </h1>
       </header>
       <main className="container">
-        <AdventuresList updateFunction={setLikedAdventures} likedAdventures={likedAdventures}/>
+        <AdventuresList updateFunction={setLikedAdventures} likedAdventures={likedAdventures} likesButton={LikesButton}/>
         {/* <AdventuresList title="another-adventure"/> */}
         {/* <AdventuresList title="second-adventure"/> */}
-        {/* <Adventures likedAdventures={likedAdventures}/> */}
+        <Adventures likedAdventures={likedAdventures} likesButton={LikesButton}/>
         {/* <Adventures name="Denver Biscuit" image_url="https://s3-media1.fl.yelpcdn.com/bphoto/bxPN9shgJEtwvT3Hrf_pCg/o.jpg" price="$$" rating="5 stars"/> */}
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -44,7 +44,7 @@ function App() {
           Learn React
         </a> */}
         <FavoriteAdventures likedAdventures={likedAdventures} />
-        <LikesButton />
+        {/* <LikesButton /> */}
       </main>
     </div>
   );
