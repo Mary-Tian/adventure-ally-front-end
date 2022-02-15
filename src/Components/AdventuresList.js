@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './AdventuresList.css';
 import Adventures from './Adventures';
+import SearchBar from './SearchBar';
 
 var adventureComponent;
 
@@ -11,9 +12,10 @@ const AdventuresList = (props) => {
         console.log(process.env.REACT_APP_YELP_API)
          getAdventures();
     });
-    const getAdventures = () => {
+    const getAdventures = (myLocation) => {
         axios
-        .get(`${'https://corsanywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search?location=Maui`, {
+        .get(`${'https://corsanywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search`, {
+            params: { location: myLocation },
             headers: {
              Authorization: `Bearer ZcVl3Ogf5E_Otv6gEjo3_CoO5Hy0E-XHpkYivTB5RrM--Xjc5kAcIteuruKcOjf_RCoxehr_mgE4Sqx0fOA6-4lBONRDlFHy8UBjjzD-lHW6kITazl7LO2HdSLn5YXYx`  // discussed below
              
@@ -95,10 +97,13 @@ const AdventuresList = (props) => {
     return (
         <section className="adventures-list">
         <h1>Adventure List</h1>
+        <div className="ui container">
+          <SearchBar onSubmit={ getAdventures } />
+        </div>
         <h2>{props.title}</h2>
-        <ul>
+        <strong>
          { adventureComponent }
-        </ul>
+        </strong>
       </section>
     );
 }

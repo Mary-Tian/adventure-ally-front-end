@@ -5,16 +5,18 @@ import LikesButton from './LikesButton';
 const FavoriteAdventures = (props) => {
 
     const listItems = props.likedAdventures.map((adventure) =>  
-    <ul>
-        <li>{adventure}</li>
-        <li>{ LikesButton }</li>
+    <section>
+        <strong>{adventure}</strong>
+        {/* <li>{ LikesButton }</li> */}
         <LikesButton />
-    </ul>)
+        <li></li>
+        <li></li>
+    </section>)
     console.log(props.likedAdventures);
 
     return ( 
         <section className="favorite-adventures">
-        <h1> Cards with favorite adventures? </h1>
+        <h1> Favorite Adventures </h1>
         {/* <h2>{ props.likedAdventures[0] }</h2> */}
         
         {/* <h2> { listItems } </h2> */}

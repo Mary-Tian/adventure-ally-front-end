@@ -6,6 +6,7 @@ import FavoriteAdventures from './Components/FavoriteAdventures';
 import AdventuresList from './Components/AdventuresList';
 import Adventures from './Components/Adventures';
 import LikesButton from './Components/LikesButton';
+import SignIn from './Components/SignIn';
 
 function App() {
   const name = "Capstone";
@@ -24,12 +25,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Adventure​🌏​🗺​⛰​Ally </h1>
+        <SignIn />
+        {/* <Route path='/signin' component={ SignIn } /> */}
       </header>
       <main className="container">
         <AdventuresList updateFunction={setLikedAdventures} likedAdventures={likedAdventures} likesButton={LikesButton}/>
         {/* <AdventuresList title="another-adventure"/> */}
         {/* <AdventuresList title="second-adventure"/> */}
-        <Adventures likedAdventures={likedAdventures} likesButton={LikesButton}/>
+        {/* <Adventures likedAdventures={likedAdventures} likesButton={LikesButton}/> */}
         {/* <Adventures name="Denver Biscuit" image_url="https://s3-media1.fl.yelpcdn.com/bphoto/bxPN9shgJEtwvT3Hrf_pCg/o.jpg" price="$$" rating="5 stars"/> */}
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>

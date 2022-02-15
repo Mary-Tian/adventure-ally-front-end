@@ -2,21 +2,26 @@
     border: solid 2px red;
 } */
 
-.AdventuresList {
+/* .AdventuresList {
     margin-left: 40px;
     margin-right: 40px;
-  }
+  } */
 
   .adventures-list {
     display: flex;
     flex-direction: column;
-    background: #ce8888;
+    background: #61bdf4;
+    opacity: 0.50;
     align-items: center;
     /* flex-basis: 100px; */
     height: 750px;
     width: 50%;
     margin: 5px;
     overflow-y: scroll;
+  }
+
+  .adventures-list:hover {
+    opacity: 1.0;
   }
 
   /* .AdventuresList {
