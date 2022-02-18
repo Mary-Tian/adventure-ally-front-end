@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+Adventure Ally 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Introduction:
 
-## Available Scripts
+Have you ever had analysis paralysis from trying to keep track of many different options? Or had fear of missing out because you weren’t sure if you reviewed all of the best options? Adventure Ally aims to solve that with a way for users to easily find AND track activities when going on vacation, deciding on a joint activity with friends, etc. 
 
-In the project directory, you can run:
+In this iteration of the webapp, users have the ability to log in to their own individual pages, where they are able to see the activities they selected. With this login, they can choose to login with email and password, or Google OAuth. 
 
-### `yarn start`
+Once logged in, users have the ability to input a location or destination. On the backend, this section makes an external call to the Yelp API, which returns a list of all of the activities for the inputted locatiomn, as well as the name of the activity, a corresponding image, the price point and the Yelp rating that activity has received. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Once we have a list of our favorite activities, we are able to notate how much we would enjoy that activity with our number of likes.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Finally, when we are ready for our next adventure, we can simply adjust our destination, and the app is now ready for us to plan our next great adventure. 
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Installation
 
-### `yarn build`
+Clone both the frontend and backend repositories.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Frontend
+Install dependencies by running npm install or yarn install.
+Create a .env file with environment variable: REACT_APP_BACKEND_URL=whatever_your_backend_url_will_be.
+To start up the frontend, run yarn start (or npm).
+You will need your own Yelp Fusion API key in order to call the Yelp API to generate adventures by location:
+In order to set up your access to Yelp Fusion API, you need to create an app with Yelp. This app represents the application you'll build using our API and includes the credentials you'll need to gain access. Here are the steps for creating an app:
+Go to Create App
+In the create new app form, enter information about your app, then agree to Yelp API Terms of Use and Display Requirements. Then click the Submit button.
+You will now have an API Key.
+Please keep the API Key to yourself since it is the credential for your call to Yelp's API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Backend
+Set up a virtual environment: python3 -m venv venv and source venv/bin/activate.
+Install the requirements: pip install -r requirements.txt.
+Create a local PostgreSQL database for the project, you can call this database something like adventure_ally.
+Create a .env file and add environment variable SQLALCHEMY_DATABASE_URI to hold the path to this database. For example: SQLALCHEMY_DATABASE_URI=here put the path to the database you created on your local machine.
+Run flask db init and flask db migrate.
+Run the backend server with flask run.
